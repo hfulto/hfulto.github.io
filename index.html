@@ -3,73 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>innit</title>
-    <link rel="icon" type="image/jpeg" href="turtle.jpg">
+    <title>Ciara's Website</title>
     <style>
         body {
-            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
-            padding: 0 1rem;
+            padding: 0;
+            font-family: 'Dancing Script', cursive;
+            background: url('duck.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
         }
-        h1 {
-            color: #3730a3;
-            margin-bottom: 2rem;
-            font-size: 2rem;
+
+        header {
             text-align: center;
-            word-break: break-word;
+            padding: 50px 0;
+            background-color: #CCCCFF; /* Periwinkle */
         }
-        .button-group {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .redirect-btn {
-            padding: 1rem 2.5rem;
-            font-size: 1.1rem;
-            border: none;
-            border-radius: 8px;
-            background: #6366f1;
-            color: #fff;
-            cursor: pointer;
-            box-shadow: 0 4px 16px rgba(99, 102, 241, 0.15);
-            transition: background 0.2s, transform 0.2s;
-            margin-bottom: 1rem;
-        }
-        .redirect-btn:hover {
-            background: #4338ca;
-            transform: translateY(-2px) scale(1.04);
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.3rem;
-            }
-            .button-group {
-                flex-direction: row;
-                gap: 1rem;
-            }
-            .redirect-btn {
-                min-width: 120px;
-                flex: 1 1 45%;
-                font-size: 1rem;
-                padding: 1rem 0;
-                margin-bottom: 0;
-            }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
         }
     </style>
 </head>
 <body>
-    <h1>hey whats up this is my website</h1>
-    <div class="button-group">
-        <button class="redirect-btn" onclick="window.location.href='https://eats.harrisonswebsite.com'">eats</button>
-        <button class="redirect-btn" onclick="window.location.href='https://hans-roslinger.vercel.app/'">yubi</button>
-        <button class="redirect-btn" onclick="window.location.href='https://fpl.harrisonswebsite.com'">fpl</button>
+    <header>
+        <h1>Ciara's Website</h1>
+    </header>
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="showPopup()" style="font-size: 1.2em; padding: 10px 20px; cursor: pointer;">Click Me</button>
     </div>
+
+    <script>
+        function showPopup() {
+            alert('Yahoo!');
+        }
+    </script>
 </body>
 </html>
